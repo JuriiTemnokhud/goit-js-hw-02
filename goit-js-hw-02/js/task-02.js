@@ -1,10 +1,13 @@
-const calculateEngravingPrice = function (message, pricePerWord) {
+const calculateEngravingPrice = function(message, pricePerWord) {
   // твой код
+  console.log(message, pricePerWord);
+
+  const words = message.split(' ');
+  console.log(words.length);
+  const result = words.length * pricePerWord;
+  console.log(message, result);
 };
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
 console.log(
   calculateEngravingPrice(
     'Proin sociis natoque et magnis parturient montes mus',
