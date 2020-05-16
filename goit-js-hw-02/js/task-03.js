@@ -1,10 +1,11 @@
-let findLongestWord = function(string) {
-  let result = [];
+const findLongestWord = function(string) {
+  const result = [];
   const words = string.split(' ');
   const firstWord = words[0];
   let first = firstWord.length;
   // console.log(first);
 
+  // eslint-disable-next-line no-restricted-syntax
   for (const word of words) {
     const longestWord = word.length;
     // console.log(longestWord);
