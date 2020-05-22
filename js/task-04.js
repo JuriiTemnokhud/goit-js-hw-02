@@ -2,6 +2,7 @@ const formatString = function(string) {
   const lengthString = string.length;
   // console.log(lengthString);
   const hString = lengthString < 40;
+  console.log(hString);
 
   if (lengthString > 40) {
     const splitString = string.split('');
