@@ -1,20 +1,21 @@
-const formatString = function(string) {
+const formatString = function (string) {
   const lengthString = string.length;
-  console.log(lengthString);
+  // console.log(lengthString);
+  const hString = lengthString < 40;
 
   if (lengthString > 40) {
     const splitString = string.split('');
     console.log((splitString.length = 40));
     console.log(splitString.push('...'));
-    console.log(splitString.join(''));
+    // console.log(splitString.join(''));
 
-    return splitString;
+    return splitString.join('');
   }
 
-  if (lengthString < 40) {
-    return string;
-  }
-  return formatString;
+  // if (lengthString < 40) {
+  //   return string;
+  // }
+  return string;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
