@@ -28,4 +28,3 @@ console.log(
     'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
   ),
 );
-// вернется форматированная строка
