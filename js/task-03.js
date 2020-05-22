@@ -2,6 +2,7 @@ const findLongestWord = function(string) {
   const words = string.split(' ');
   let firstWord = words[0];
 
+  // eslint-disable-next-line
   for (const word of words) {
     if (word.length > firstWord.length) {
       firstWord = word;
